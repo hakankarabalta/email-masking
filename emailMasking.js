@@ -27,6 +27,17 @@ maskForm.addEventListener('submit',
     maskForm.innerHTML = `
     <h2>işlem Başarılı</h2>
      <p>Maskelenmiş Veri: <strong>${maskedResult}</strong></p>
+            <button id="copyBtn">Kopyala</button>
             <button onclick="location.reload()">Yeni Sorgu</button>
             `;
-  });
+});
+
+const copyBtn = document.getElementById("copyBtn");
+
+maskForm.addEventListener("click", function (e) {
+  if (e.target.id === "copyBtn") {
+  const copy = maskForm.querySelector("strong").textContent;
+  
+  navigator.clipboard.writeText(copy);
+  }
+});
