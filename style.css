@@ -85,15 +85,18 @@ button {
   width: 70%;
   border-radius: 7px;
   margin: 0 auto;
-  transition: transform 0.2s ease;
+  transition: transform 0.5s ease;
 }
 
 button:hover {
   box-shadow: 0 0 20px rgba(0, 255, 200, 0.4);
   color: #0b0f14;
   background-color: #3df2e0;
+  transform: scale(0.95);
 }
 
 button:active {
-  transform: scale(0.95);
+  transform: scale(1);
+  
 }
+
