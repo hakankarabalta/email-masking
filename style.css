@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  width :100vw;
+  height: 100vh;
+  
+}
+
+form {
+  width: 70vw;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  padding:20px;
+  padding-top: 30vh;
+  background-color: red;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+
+input {
+  font-size: 1.6rem;
+}
+
+button {
+  background-color: transparent;
+  border:1px solid #242527;
+  font-size: 1.4rem;
+  
+  
+}
